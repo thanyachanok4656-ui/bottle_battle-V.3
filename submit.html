@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>บันทึกน้ำหนัก</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="menu">
+    <a href="index.html">หน้าแรก</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="submit.html">บันทึกน้ำหนัก</a>
+    <a href="history.html">ประวัติ</a>
+  </nav>
+
+  <main class="page small">
+    <h1>➕ บันทึกน้ำหนักขวด</h1>
+
+    <form id="submitForm" class="form-card">
+      <label>ห้องเรียน</label>
+      <select id="className" required></select>
+
+      <label>น้ำหนักขวดรวม (kg)</label>
+      <input id="weightKg" type="number" step="0.01" min="0.01" required>
+
+      <label>ผู้บันทึก</label>
+      <input id="recorder" type="text" placeholder="เช่น ครูธันยชนก">
+
+      <button class="btn" type="submit">บันทึกข้อมูล</button>
+      <p id="formMsg"></p>
+    </form>
+  </main>
+
+  <script src="api.js"></script>
+  <script src="submit.js"></script>
+</body>
+</html>

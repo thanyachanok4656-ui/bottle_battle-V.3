@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Bottle Battle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="menu">
+    <a href="index.html">หน้าแรก</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="submit.html">บันทึกน้ำหนัก</a>
+    <a href="history.html">ประวัติ</a>
+  </nav>
+
+  <main class="hero">
+    <div>
+      <p class="tag">Eco Theme Park</p>
+      <h1>♻️ Bottle Battle</h1>
+      <p class="lead">แข่งขันเก็บขวดพลาสติก เปลี่ยนน้ำหนักให้เป็นคะแนนรักษ์โลก</p>
+      <a class="btn" href="ranking.html">ดู Ranking</a>
+    </div>
+  </main>
+
+  <section class="cards">
+    <div class="card"><b id="totalWeight">0</b><span>kg น้ำหนักรวม</span></div>
+    <div class="card"><b id="totalBottles">0</b><span>ขวดโดยประมาณ</span></div>
+    <div class="card"><b id="co2Saved">0</b><span>kgCO₂ ที่ลดได้</span></div>
+    <div class="card"><b id="topClass">-</b><span>ห้องอันดับ 1</span></div>
+  </section>
+
+  <script src="api.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

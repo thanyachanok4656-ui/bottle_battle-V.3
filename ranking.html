@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Bottle Battle Ranking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="menu">
+    <a href="index.html">หน้าแรก</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="submit.html">บันทึกน้ำหนัก</a>
+    <a href="history.html">ประวัติ</a>
+  </nav>
+
+  <main class="page">
+    <h1>🏆 Bottle Battle Ranking</h1>
+
+    <div class="podium-box">
+      <img src="assets/ranking-bg.png" class="podium-img" alt="Ranking Background">
+      <div id="top1" class="top top1"></div>
+      <div id="top2" class="top top2"></div>
+      <div id="top3" class="top top3"></div>
+    </div>
+
+    <section class="table-card">
+      <h2>อันดับทั้งหมด</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>อันดับ</th>
+            <th>ห้อง</th>
+            <th>น้ำหนักรวม</th>
+          </tr>
+        </thead>
+        <tbody id="rankingTable"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="api.js"></script>
+  <script src="ranking.js"></script>
+</body>
+</html>

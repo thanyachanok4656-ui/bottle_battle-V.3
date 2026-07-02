@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ประวัติการบันทึก</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="menu">
+    <a href="index.html">หน้าแรก</a>
+    <a href="ranking.html">Ranking</a>
+    <a href="submit.html">บันทึกน้ำหนัก</a>
+    <a href="history.html">ประวัติ</a>
+  </nav>
+
+  <main class="page">
+    <h1>📋 ประวัติการบันทึก</h1>
+
+    <section class="table-card">
+      <table>
+        <thead>
+          <tr>
+            <th>วันที่/เวลา</th>
+            <th>ห้อง</th>
+            <th>น้ำหนัก</th>
+            <th>ผู้บันทึก</th>
+          </tr>
+        </thead>
+        <tbody id="historyTable"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="api.js"></script>
+  <script src="history.js"></script>
+</body>
+</html>
